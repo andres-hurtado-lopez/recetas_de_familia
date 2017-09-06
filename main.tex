@@ -3,6 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{tikz}
+
+\newcommand{\receta}[1]{
+\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+}
+
 \begin{document}
 \title{Recetas de Familia}
 \author{Andrés Hurtado López}
@@ -16,8 +22,12 @@
 \mainmatter
 \part{Comida del Dia a Dia}
 \part{Platos Especiales}
-\part{Dulce Pecado}
-\chapter{Sopa de Camarón}
+\input{contenido/lomo_viche}
+\input{contenido/cazuela_mexicana}
+\input{contenido/paella_mariscos}
+\input{contenido/lasagna_betty}
+\part{Postres}
+
 \backmatter
 \input{contenido/glosario}
 \end{document}
