@@ -5,8 +5,26 @@
 \usepackage{tikz}
 
 \newcommand{\receta}[1]{
-\chapter*{#1}
+\section*{#1}
 \addcontentsline{toc}{chapter}{#1}
+}
+
+\newenvironment{ingredientes}[1]{
+\subsection*{#1}
+\begin{list}{}{}
+\let\olditem\item
+\renewcommand\item{\olditem ITEM: }
+\setlength{\itemsep}{0pt}
+\setlength{\parsep}{0pt} \setlength{\parskip}{0pt}}
+{\end{list}}
+
+\newenvironment{myitemize}{
+\begin{list}{}{}
+\let\olditem\item
+\renewcommand\item{\olditem ITEM: }}{ \end{list} }
+
+\newcommand{\preparacion}{
+\section*{Preparación}
 }
 
 \begin{document}
