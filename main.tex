@@ -1,22 +1,21 @@
-\documentclass[letterpaper]{book}
+\documentclass[letterpaper,10pt]{book}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{tikz}
 
 \newcommand{\receta}[1]{
-\section*{#1}
+\chapter*{#1}
 \addcontentsline{toc}{chapter}{#1}
 }
 
-\newenvironment{ingredientes}[1]{
-\subsection*{#1}
-\begin{list}{}{}
-\let\olditem\item
-\renewcommand\item{\olditem ITEM: }
+\newenvironment{ingredientes}{
+\section*{Ingredientes}
+\begin{itemize}
 \setlength{\itemsep}{0pt}
-\setlength{\parsep}{0pt} \setlength{\parskip}{0pt}}
-{\end{list}}
+\setlength{\parsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
 
 \newenvironment{myitemize}{
 \begin{list}{}{}
@@ -94,7 +93,6 @@
 \input{contenido/pollo_hungara}
 \input{contenido/arroz_con_leche}
 \input{contenido/torta_arroz}
-
 \part{Postres}
 \input{contenido/crema_inglesa}
 \input{contenido/bocado_angel}
