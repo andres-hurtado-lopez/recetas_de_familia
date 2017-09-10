@@ -33,6 +33,7 @@
 \tableofcontents
 \mainmatter
 \part{Comida de Sal}
+\makeatletter\@openrightfalse
 \input{contenido/spaguetti_verduras}
 \input{contenido/spaguetti_carne}
 \input{contenido/carne_verduras_azucar}
@@ -89,16 +90,23 @@
 \input{contenido/pollo_hungara}
 \input{contenido/arroz_con_leche}
 \input{contenido/torta_arroz}
+\@openrighttrue\makeatother
 \part{Dulces}
+\makeatletter\@openrightfalse
 \input{contenido/crema_inglesa}
 \input{contenido/bocado_angel}
 \input{contenido/cheesecake_mora}
 \input{contenido/torta_banano}
 \input{contenido/empanadas_chilenas}
+\@openrighttrue\makeatother
 \part{Bebidas}
+\makeatletter\@openrightfalse
 \input{contenido/margarita}
+\@openrighttrue\makeatother
 \part{Panes}
+\makeatletter\@openrightfalse
 \input{contenido/pan_payes}
+\@openrighttrue\makeatother
 \backmatter
 \input{contenido/glosario}
 \end{document}
