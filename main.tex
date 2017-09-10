@@ -17,11 +17,6 @@
 \setlength{\parskip}{0pt}}
 {\end{itemize}}
 
-\newenvironment{myitemize}{
-\begin{list}{}{}
-\let\olditem\item
-\renewcommand\item{\olditem ITEM: }}{ \end{list} }
-
 \newcommand{\preparacion}{
 \section*{Preparación}
 }
@@ -37,7 +32,8 @@
 \input{contenido/prefacio}
 \tableofcontents
 \mainmatter
-\part{Platos Fuertes}
+\part{Comida de Sal}
+\input{contenido/spaguetti_verduras}
 \input{contenido/spaguetti_carne}
 \input{contenido/carne_verduras_azucar}
 \input{contenido/costillas_pegajosas_kansas}
@@ -93,12 +89,11 @@
 \input{contenido/pollo_hungara}
 \input{contenido/arroz_con_leche}
 \input{contenido/torta_arroz}
-\part{Postres}
+\part{Dulces}
 \input{contenido/crema_inglesa}
 \input{contenido/bocado_angel}
 \input{contenido/cheesecake_mora}
 \input{contenido/torta_banano}
-\input{contenido/spaguetti_verduras}
 \input{contenido/empanadas_chilenas}
 \part{Bebidas}
 \input{contenido/margarita}
