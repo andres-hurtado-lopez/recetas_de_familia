@@ -1,24 +1,44 @@
+\pagenumbering{gobble}
 \begin{titlepage}
-  \begin{center}
-    \large
-    ANDRÉS HURTADO LÓPEZ \\
-    \vspace*{3cm}
-    \Huge{Recetas de Familia} \\
-    \vspace*{3cm}
-    \normalsize
-    Editor\\
-    Liliana Herrera Ramirez\\
-    \vspace*{1cm}
-    Diseño Gráfico\\
-    Ana Maria Hurtado\\
-    \vspace*{1cm}
-    Fotografia \\
-    Juan Pablo Hurtado\\
-    \vspace*{1cm}
-    Dirección Técnica \\
-    Luz Stella López\\
-    \vspace*{4.5cm}
-    HERHUR Editores\\
-    2017\\
-  \end{center}
+	\addtolength{\wpXoffset}{-12cm}
+	\addtolength{\wpYoffset}{-3cm}
+	\ThisCenterWallPaper{2.5}{fotos/portada.jpg}
+
+	\definecolor[named]{color01}{rgb}{0.92,0.92,0.33}
+
+	\begin{tikzpicture}[remember picture,overlay]
+		\node [rectangle, rounded corners, fill={RGB:red,150;green,150;blue,150}, opacity=0.50, anchor=south west, minimum width=21.6cm, minimum height=18cm] (box) at (-2.6cm,-21cm) (box){};
+
+		\node[text centered, anchor=north, color01, text width=21.6cm, yshift=-1cm,font=\Huge\bfseries\fontsize{80}{80}\selectfont ] at (box.north){ RECETAS DE FAMILIA }; 
+
+		\node[text centered, anchor=south, white, yshift=1.5cm, text width=20cm, font=\bfseries\LARGE] at (box.south)(name){\textbf{Andrés Hurtado López}};
+				\node[text centered, anchor=south, white, yshift=1.5cm, text width=20cm, font=\bfseries\LARGE] at (name.south){\textbf{Primera Edición}};
+
+
+	\end{tikzpicture}
+	\clearpage
+
+  	\begin{center}
+    	\large
+    	ANDRÉS HURTADO LÓPEZ \\
+    	\vspace*{3cm}
+    	\Huge{Recetas de Familia} \\
+    	\vspace*{5cm}
+    	\normalsize
+    	%Editor\\
+    	%Liliana Herrera Ramirez\\
+    	%\vspace*{1cm}    
+    	%Diseño Gráfico\\
+    	%Ana Maria Hurtado\\
+    	%\vspace*{1cm}
+    	%Fotografia \\
+    	%Juan Pablo Hurtado\\
+    	%\vspace*{1cm}
+    	Dirección Técnica \\
+    	Luz Stella López\\
+    	\vspace*{6.5cm}
+    	Andrés Hurtado\\
+    	2017\\
+  	\end{center}
 \end{titlepage}
+\pagenumbering{roman}
