@@ -6,6 +6,9 @@
 \usepackage{wallpaper} 
 \usepackage{color}
 
+\usepackage{imakeidx}
+\makeindex
+
 \newcommand{\receta}[1]{
 \chapter*{#1}
 \addcontentsline{toc}{chapter}{#1}
@@ -42,6 +45,7 @@
 \input{contenido/spaguetti_carne}
 \input{contenido/carne_verduras_azucar}
 \input{contenido/costillas_pegajosas_kansas}
+\input{contenido/lomito_alcaparrado}
 \input{contenido/marranitas}
 \input{contenido/molde_berenjena}
 \input{contenido/lomo_viche}
@@ -120,6 +124,32 @@
 \input{contenido/pan_payes_masamadre}
 \input{contenido/pan_cebolla_queso_parmesano}
 \@openrighttrue\makeatother
+\part{Final}
 \backmatter
+\printindex
+\addcontentsline{toc}{chapter}{Índice alfabético}
+\begin{thebibliography}{9}
+
+\bibitem{cuadernococinafacil}
+  Blanca H. Cabrera Mendoza,
+  \textit{Mi Cuaderno de Cocina Fácil},
+  Blanca H. Cabrera Mendoza,
+  2004.
+
+\bibitem{nestlealimbienII1987}
+  Ana Cecilia Arboleda,
+  \textit{Aliméntese Bien Volumen II},
+  NESTLÉ DE COLOMBIA S.A., Editorial Printer Colombiana Ltda,
+  1987.
+
+\bibitem{nestlealimbienIII1987}
+  Ana Cecilia Arboleda,
+  \textit{Aliméntese Bien Volumen III},
+  NESTLÉ DE COLOMBIA S.A., Editorial Printer Colombiana Ltda,
+  1987.
+
+
+\end{thebibliography}
+\addcontentsline{toc}{chapter}{Bibliografía}
 %\input{contenido/glosario}
 \end{document}
