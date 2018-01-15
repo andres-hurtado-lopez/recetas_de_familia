@@ -7,7 +7,11 @@
 \usepackage{color}
 
 \usepackage{imakeidx}
+\usepackage[backend=bibtex,style=numeric,sorting=ynt]{biblatex}
+\usepackage{url}
+\addbibresource{bibliografia.bib}
 \makeindex
+
 
 \newcommand{\receta}[1]{
 \chapter*{#1}
@@ -128,28 +132,8 @@
 \backmatter
 \printindex
 \addcontentsline{toc}{chapter}{Índice alfabético}
-\begin{thebibliography}{9}
-
-\bibitem{cuadernococinafacil}
-  Blanca H. Cabrera Mendoza,
-  \textit{Mi Cuaderno de Cocina Fácil},
-  Blanca H. Cabrera Mendoza,
-  2004.
-
-\bibitem{nestlealimbienII1987}
-  Ana Cecilia Arboleda,
-  \textit{Aliméntese Bien Volumen II},
-  NESTLÉ DE COLOMBIA S.A., Editorial Printer Colombiana Ltda,
-  1987.
-
-\bibitem{nestlealimbienIII1987}
-  Ana Cecilia Arboleda,
-  \textit{Aliméntese Bien Volumen III},
-  NESTLÉ DE COLOMBIA S.A., Editorial Printer Colombiana Ltda,
-  1987.
-
-
-\end{thebibliography}
+\nocite{*}
+\printbibliography
 \addcontentsline{toc}{chapter}{Bibliografía}
 %\input{contenido/glosario}
 \end{document}
